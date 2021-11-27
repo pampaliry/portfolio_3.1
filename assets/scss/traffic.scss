@@ -1,0 +1,22 @@
+section.traffic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .texts {
+        margin: 6.25rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        H2 {
+            text-align: center;
+        }
+        p {
+            color: $gray;
+            text-align: center;
+            width: 70%;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

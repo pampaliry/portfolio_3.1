@@ -1,0 +1,131 @@
+section.team {
+    margin: 3rem auto;
+    position: relative;
+    bottom: -10rem;
+    display: flex;
+    flex-direction: row;
+    .left {
+        width: 40%;
+        H2 {
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            color: $gray;
+        }
+        .button:hover {
+            background-color: $purpleHover;
+            a {
+                color: white;
+            }
+        }
+        .button {
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 12.5rem;
+            height: 3.125rem;
+            background-color: $purple;
+            a {
+                color: $white;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        .left_img_holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 1.25rem;
+            img {
+                width: 95%;
+            }
+        }
+        .right_img_holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 1.875rem;
+            img {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section.team {
+        .left {
+            H2 {}
+            p {}
+            .button {
+                a {}
+            }
+        }
+        .right {
+            .left_img_holder {
+                img {}
+            }
+            .right_img_holder {
+                img {}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.team {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        .left {
+            width: 80%;
+            H2 {}
+            p {}
+            .button {
+                a {}
+            }
+        }
+        .right {
+            width: 80%;
+            margin-top: 4.375rem;
+            .left_img_holder {
+                img {}
+            }
+            .right_img_holder {
+                img {}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.team {
+        margin-top: 6.25rem;
+        .left {
+            H2 {}
+            p {}
+            .button {
+                a {}
+            }
+        }
+        .right {
+            .left_img_holder {
+                img {}
+            }
+            .right_img_holder {
+                img {}
+            }
+        }
+    }
+}

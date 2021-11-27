@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="bg">
+            <img src="assets/imgs/image bg.png" alt="">
+        </div>
+        <section class="nav_row">
+            <div class="logo_holder">
+                <img src="assets/imgs/logo.png" alt="">
+            </div>
+
+            <!--desktop mavigation-->
+            <nav class="desktop_nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">About us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">services</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">Price</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">Contantact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--mobile mavigation-->
+            <nav class="mobile_nav flex center">
+                <div id="burger" class="burger">
+
+
+                    <svg id="burgerImg" viewBox="0 0 80 80">
+                        <rect width="80" height="10" y="16" rx="5"></rect>
+                        <rect width="80" height="10" y="36" rx="5"></rect>
+                        <rect width="80" height="10" y="56" rx="5"></rect>
+                      </svg>
+
+
+                </div>
+                <ul id="mobile_nav" class="mobile_nav">
+                    <li class="nav_item"><a href="">Home</a></li>
+                    <li class="nav_item"><a href="">About us</a></li>
+                    <li class="nav_item"><a href="">services</a></li>
+                    <li class="nav_item"><a href="">price</a></li>
+                    <li class="nav_item"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <section class="hero container">
+        <div class="left">
+            <H1>
+                Our tools for communication fo work teams is increasingly powerful.
+            </H1>
+            <div class="button">
+                <a href="">
+                free SEO report
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="assets/imgs/hero_img.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="partners container">
+        <div class="img_holder">
+            <a href=""><img src="assets/imgs/partners/Remark.png" alt=""></a>
+        </div>
+        <div class="img_holder">
+            <a href=""><img src="assets/imgs/partners/chavy.png" alt=""></a>
+        </div>
+        <div class="img_holder">
+            <a href=""><img src="assets/imgs/partners/limoon.png" alt=""></a>
+        </div>
+        <div class="img_holder">
+            <a href=""><img src="assets/imgs/partners/SlinCorp.png" alt=""></a>
+        </div>
+    </section>
+
+    <section class="traffic container">
+        <div class="texts">
+            <H2>
+                Increase traffic and increase revenue
+            </H2>
+            <p>
+                nteger eu metus at orci scelerisque rutrum. Vivamus condimentu ipsum vitae iaculis cursus, turpis nisl.
+            </p>
+        </div>
+        <img src="assets/imgs/traffic_img.png" alt="">
+    </section>
+
+
+    <section class="facts container">
+        <div class="left"><span class="big_num">20</span><span class="under">Years of experience </span></div>
+
+        <div class="right">
+            <div class="top">
+                <div class="data"><span class="num">99.9%</span><span class="text">they are organic visits</span></div>
+                <div class="data"><span class="num">99.9%</span><span class="text">they are organic visits</span></div>
+            </div>
+            <div class="bottom">
+                <div class="data"><span class="num">99.9%</span><span class="text">they are organic visits</span></div>
+                <div class="data"><span class="num">99.9%</span><span class="text">they are organic visits</span></div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <section class="slider_block container">
+        <H2>
+            Latest case studies
+        </H2>
+        <p>
+            Integer eu metus at orci scelerisque rutrum. Vivamus condimentu ipsum vitae iaculis cursus, turpis nisl.
+        </p>
+
+
+
+        <!--slider-->
+        <section class="slider mySlides fade">
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/01.png" alt=""></a>
+            </div>
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/02.png" alt=""></a>
+            </div>
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/03.png" alt=""></a>
+            </div>
+
+        </section>
+        <section class="slider mySlides fade">
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/02.png" alt=""></a>
+            </div>
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/03.png" alt=""></a>
+            </div>
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/01.png" alt=""></a>
+            </div>
+
+        </section>
+        <section class="slider mySlides fade">
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/03.png" alt=""></a>
+            </div>
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/02.png" alt=""></a>
+            </div>
+            <div class="img_holder ">
+                <a href=""><img src="assets/imgs/slider/01.png" alt=""></a>
+            </div>
+
+        </section>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+
+    <section class="strategy container">
+        <div class="left">
+            <div class="img_holder">
+                <img src="assets/imgs/telescop.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <H2>
+                It appears on the cover of the search engines
+            </H2>
+            <p>
+                Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular lingues differe solmen.
+            </p>
+            <div class=" button ">
+
+                <a href="">
+                    Get started
+                </a>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <section class="pricing container">
+        <H2>
+            Choose your pricing plans
+        </H2>
+        <p>
+            Integer eu metus at orci scelerisque rutrum. Vivamus condimentu ipsum vitae iaculis cursus, turpis nisl.
+        </p>
+
+
+        <aside class="switcher">
+            <span class="discount">
+                37% OFF
+            </span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider">
+                    <span class="left_string">
+                      Monthly
+                    </span>
+                    <span class="right_string">
+                        Yearly
+                    </span>
+                </span>
+              </label>
+        </aside>
+
+
+
+        <section class="cards">
+
+            <div class="card">
+                <H3>Plan startup</H3>
+                <div class="price">
+                    <sup class="curr">$</sup>
+                    <span class="num">49</span>
+                    <span class="interval">/mo</span>
+                </div>
+                <span><strong>5 </strong>users</span>
+                <span><strong>100 </strong>keywords</span>
+                <span><strong>10 </strong>campaign lists</span>
+                <span>access to analytics</span>
+                <div class="button"><a href="">choose plan</a></div>
+            </div>
+
+            <div class="card">
+                <H3>Plan startup</H3>
+                <div class="price">
+                    <sup class="curr">$</sup>
+                    <span class="num">49</span>
+                    <span class="interval">/mo</span>
+                </div>
+                <span><strong>5 </strong>users</span>
+                <span><strong>100 </strong>keywords</span>
+                <span><strong>10 </strong>campaign lists</span>
+                <span>access to analytics</span>
+                <div class="button"><a href="">choose plan</a></div>
+            </div>
+
+            <div class="card">
+                <H3>Plan startup</H3>
+                <div class="price">
+                    <sup class="curr">$</sup>
+                    <span class="num">49</span>
+                    <span class="interval">/mo</span>
+                </div>
+                <span><strong>5 </strong>users</span>
+                <span><strong>100 </strong>keywords</span>
+                <span><strong>10 </strong>campaign lists</span>
+                <span>access to analytics</span>
+                <div class="button"><a href="">choose plan</a></div>
+            </div>
+
+        </section>
+    </section>
+
+    <section class="team container">
+        <div class="left">
+            <H2>
+                Our team of SEO specialist
+            </H2>
+            <p>
+                Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis.
+            </p>
+            <div class="button">
+                <a href="">All the team </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="left_img_holder">
+                <img src="assets/imgs/team/01.png" alt="">
+            </div>
+
+            <div class="right_img_holder">
+                <img src="assets/imgs/team/02.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="form container">
+        <h4>Email newsletters!</h4>
+        <p>
+            Integer eu metus at orci scelerisque rutrum. Vivamus condimentum, ipsum vitae iaculis cursus, turpis nisl ultricies massa.
+        </p>
+        <form action="">
+            <input type="email" class="in_email" id="email" name="email" placeholder="Your email">
+            <input type="submit" class="in_subs" value="Subscribe">
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="col">
+                <div class="img_holder">
+                    <img src="assets/imgs/footer/logo_white.png" alt="">
+                </div>
+                <p>
+                    Vivamus dapibus et purus quis mollis. Mauris tempus tortor vel mi eleifend laoreet. Nulla laoreet sapien erat.
+                </p>
+                <aside class="social">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </aside>
+            </div>
+
+            <div class="col mid">
+                <H5>
+                    Useful links
+                </H5>
+                <ul class="links">
+                    <li>
+                        <a href="">about us</a>
+                    </li>
+                    <li>
+                        <a href="">contact us</a>
+                    </li>
+                    <li>
+                        <a href="">link</a>
+                    </li>
+                    <li>
+                        <a href="">link</a>
+                    </li>
+                    <li>
+                        <a href="">link</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <H5>
+                    Contact us
+                </H5>
+                <p><span>Phone Number: ( + 421 ) 123 456 789</span><br>
+                    <span>Phone Number ( + 421 )123 456 789</span></p>
+
+
+
+                <p><span>Email: menopriezvisko@gmail.com</span><br>
+                    <span>Email: menopriezvisko@gmail.com</span></p>
+
+
+
+                <p>
+                    <span>Address :</span> <span> FALCOO, s.r.o,<br> Mateja Bela 63 </span>
+                    <span>010 15, Žilina  SLOVAKIA</span></p>
+            </div>
+        </div>
+
+
+        <section class="bott">
+            <aside class="container">
+                <span>
+                    Copyright © 2021, checklist  
+                </span>
+                <div id="backTop" class="img_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">   
+                        <g transform="translate(128 128) scale(0.87 0.87)" >
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-144.89999999999998 -144.90000000000003) scale(3.22 3.22)" >
+                            <path d="M 89.983 5.63 c -0.006 -0.267 -0.016 -0.534 -0.026 -0.802 c -0.011 -0.299 -0.02 -0.597 -0.036 -0.897 c -0.031 -0.602 -0.07 -1.207 -0.121 -1.814 c -0.081 -0.973 -0.854 -1.745 -1.827 -1.827 c -0.607 -0.051 -1.21 -0.089 -1.811 -0.121 c -0.305 -0.016 -0.607 -0.025 -0.909 -0.036 c -0.262 -0.009 -0.525 -0.02 -0.786 -0.025 c -0.437 -0.01 -0.871 -0.013 -1.304 -0.013 c -0.072 0 -0.145 0 -0.217 0.001 c -8.628 0.042 -16.548 2.16 -24.544 6.526 C 58.261 6.7 58.12 6.773 57.979 6.85 c -0.05 0.028 -0.099 0.052 -0.149 0.08 c -0.011 0.006 -0.02 0.016 -0.031 0.022 c -6.556 3.654 -13.101 8.811 -19.875 15.585 c -0.77 0.77 -1.523 1.55 -2.268 2.334 l -13.164 1.001 c -0.385 0.029 -0.753 0.169 -1.06 0.402 L 0.785 41.987 c -0.657 0.5 -0.94 1.352 -0.711 2.145 c 0.228 0.793 0.92 1.364 1.742 1.439 l 19.373 1.749 l 6.134 6.134 c -2.174 0.497 -4.389 1.715 -6.286 3.611 c -1.136 1.137 -2.048 2.411 -2.716 3.803 c -0.873 1.849 -2.79 6.61 -4.82 11.651 l -0.991 2.459 c -0.3 0.744 -0.127 1.595 0.441 2.162 c 0.382 0.383 0.894 0.586 1.415 0.586 c 0.251 0 0.505 -0.048 0.748 -0.146 l 2.547 -1.027 c 5 -2.014 9.723 -3.917 11.576 -4.79 c 1.38 -0.664 2.655 -1.576 3.79 -2.711 c 1.896 -1.896 3.113 -4.111 3.61 -6.285 l 5.952 5.952 l 1.749 19.372 c 0.074 0.822 0.646 1.514 1.439 1.742 c 0.183 0.053 0.369 0.078 0.553 0.078 c 0.614 0 1.207 -0.283 1.592 -0.789 l 15.711 -20.646 c 0.233 -0.307 0.373 -0.675 0.402 -1.06 l 0.971 -12.775 c 0.857 -0.811 1.706 -1.635 2.547 -2.475 c 6.779 -6.779 11.939 -13.327 15.594 -19.887 c 0.004 -0.007 0.01 -0.013 0.014 -0.02 c 0.018 -0.032 0.033 -0.063 0.051 -0.095 c 0.167 -0.301 0.326 -0.602 0.486 -0.904 c 4.207 -7.847 6.251 -15.635 6.295 -24.099 c 0.001 -0.083 0.001 -0.165 0.001 -0.248 C 89.996 6.488 89.993 6.06 89.983 5.63 z M 64.413 37.493 c -1.577 1.577 -3.675 2.447 -5.907 2.447 c -2.231 0 -4.329 -0.869 -5.907 -2.447 c -3.257 -3.258 -3.257 -8.557 0 -11.815 v 0 c 3.259 -3.257 8.559 -3.255 11.814 0 c 1.578 1.577 2.448 3.675 2.448 5.907 S 65.992 35.915 64.413 37.493 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(223, 223, 223); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />                    
+                        </svg>
+                </div>
+            </aside>
+        </section>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/backTop.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/slideshowB.js"></script>
+    <script src="assets/js/burger.js"></script>
+</body>
+
+</html>

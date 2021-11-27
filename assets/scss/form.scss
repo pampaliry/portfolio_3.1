@@ -1,0 +1,81 @@
+section.form {
+    padding: 3rem 0;
+    min-height: 32rem;
+    bottom: -16rem;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: $orangeGradient;
+    H4 {
+        margin: 1rem auto;
+        max-width: 70%;
+        text-align: center;
+    }
+    p {
+        margin: 1rem auto 3rem auto;
+        max-width: 70%;
+        text-align: center;
+        color: $white;
+    }
+    form {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        input.in_email {
+            text-indent: 10px;
+            width: 60%;
+            color: $white;
+            background-color: transparent;
+            border: $white solid 2px;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            height: 3.15rem;
+        }
+        input.in_email:focus-visible {
+            outline: transparent;
+        }
+        input.in_email::placeholder {
+            color: $white;
+        }
+        input.in_subs {
+            height: 3.5rem;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            width: 35%;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+        }
+        input.in_subs:hover {
+            background-color: $white;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.form {
+        H4 {
+            font-size: 200%;
+        }
+        p {}
+        form {
+            input.in_email {}
+            input.in_subs {}
+            input.in_subs:hover {}
+        }
+    }
+}

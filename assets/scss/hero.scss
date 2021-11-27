@@ -1,0 +1,69 @@
+section.hero {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        H1 {
+            width: 80%;
+        }
+        .button:hover {
+            background-image: $oGHover;
+        }
+        .button {
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            margin: 10% 0;
+            height: 3.125rem;
+            width: 15.625rem;
+            background-image: $orangeGradient;
+            a {
+                text-align: center;
+                color: $white;
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 900px) {
+    section.hero {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.hero {
+        flex-direction: column-reverse;
+        .left {
+            width: 100%;
+            span {}
+            .button:hover {}
+            .button {
+                width: 100%;
+                height: 3.125rem;
+                a {}
+            }
+        }
+        .right {
+            img {}
+        }
+    }
+}

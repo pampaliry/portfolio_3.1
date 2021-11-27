@@ -1,0 +1,277 @@
+section.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    H2 {
+        width: 50%;
+        text-align: center;
+    }
+    p {
+        width: 60%;
+        color: $gray;
+        text-align: center;
+    }
+    /// SWITCHER!!
+    aside.switcher {
+        margin: 3.125rem;
+        span.discount {
+            text-transform: uppercase;
+            color: $purple;
+            z-index: 10;
+            position: relative;
+            padding: 0 .5rem;
+            right: -14rem;
+            bottom: -1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cfcdfe;
+            width: 5rem;
+            height: 2.5rem;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        label.switch {
+            position: relative;
+            display: inline-block;
+            width: 15.625rem;
+            height: 3.125rem;
+            input {
+                color: white;
+                font-family: 'Raleway', sans-serif;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+            input:checked+.slider {
+                span.left_string {
+                    color: $gray;
+                }
+            }
+            input:checked+.slider {
+                span.right_string {
+                    color: $white;
+                }
+            }
+            input:checked+.slider:before {
+                transform: translate(7.813rem);
+                -webkit-transform: translate(7.813rem);
+                -moz-transform: translate(7.813rem);
+                -ms-transform: translate(7.813rem);
+                -o-transform: translate(7.813rem);
+            }
+            span.slider {
+                border-radius: 10px;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                span.left_string,
+                span.right_string {
+                    position: absolute;
+                    top: 30%;
+                }
+                span.left_string {
+                    left: 1.875rem;
+                    color: $white;
+                }
+                span.right_string {
+                    right: 2.5rem;
+                    color: $gray;
+                }
+            }
+            span.slider::before {
+                border-radius: 10px;
+                position: absolute;
+                content: "";
+                height: 3.125rem;
+                width: 7.813rem;
+                left: 0px;
+                bottom: 0px;
+                background-color: $purple;
+                -webkit-transition: .4s;
+                transition: .4s;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+        }
+    }
+}
+
+section.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .card {
+        height: 22rem;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        padding: 2rem 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        H3 {}
+        .price {
+            font-weight: 500;
+            .curr {
+                color: $purple;
+                font-size: 20px;
+                position: relative;
+                top: -20px;
+            }
+            .num {
+                font-size: 3.125rem;
+                color: $purple;
+            }
+            .interval {}
+        }
+        span {
+            color: $gray;
+            line-height: 1.5rem;
+            strong {
+                position: relative;
+                left: -2px;
+            }
+        }
+        .button:hover {
+            background-image: $oGHover;
+        }
+        .button {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            width: 80%;
+            height: 4.375rem;
+            background-color: #eeeeee;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            a:hover {
+                color: $white;
+            }
+            a {
+                color: #6a727f;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section.pricing {
+        H2 {}
+        p {}
+        aside.switcher {}
+        section.cards {
+            .card {
+                H3 {}
+                .price {
+                    .curr {}
+                    .num {}
+                    .interval {}
+                }
+                span {
+                    strong {}
+                }
+                .button:hover {}
+                .button {
+                    a:hover {}
+                    a {}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.pricing {
+        padding: 0;
+        width: 90%;
+        H2 {
+            width: 60%;
+        }
+        p {
+            width: 70%;
+        }
+        aside.switcher {}
+        section.cards {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            .card {
+                margin: 1.25rem auto;
+                width: 100%;
+                H3 {}
+                .price {
+                    .curr {}
+                    .num {}
+                    .interval {}
+                }
+                span {
+                    strong {}
+                }
+                .button:hover {}
+                .button {
+                    a:hover {}
+                    a {}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.pricing {
+        H2 {}
+        p {}
+        aside.switcher {}
+        section.cards {
+            .card {
+                H3 {}
+                .price {
+                    .curr {}
+                    .num {}
+                    .interval {}
+                }
+                span {
+                    strong {}
+                }
+                .button:hover {}
+                .button {
+                    a:hover {}
+                    a {}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+// sass --watch assets/scss/main.scss style.css --style=compressed
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import 'variables';
+@import 'typography';
+// sections
+@import 'header';
+@import 'hero';
+@import 'partners';
+@import 'traffic';
+@import 'facts';
+@import 'sliderblock';
+@import 'strategy';
+@import 'pricing';
+@import 'team';
+@import 'form';
+@import 'footer';
+.container {
+    width: 85%;
+    margin: auto;
+    max-width: 1110px;
+}
+
+body {
+    width: 100%;
+    background: $white;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+// detail setup
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 80%;
+    }
+    section.form {
+        span {}
+        p {}
+        form {
+            font-size: 100%;
+        }
+    }
+    section.facts {
+        .left {
+            span.big_num {}
+            span.under {}
+        }
+        .right {
+            .top {
+                display: flex;
+                flex-direction: column;
+                .data {
+                    span.num {}
+                    span.text {}
+                }
+            }
+            .bottom {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

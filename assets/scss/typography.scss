@@ -1,0 +1,55 @@
+/// typography
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+H1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: .7;
+    color: $gray;
+    line-height: 2.5;
+}
+
+H2 {
+    font-size: 1.7rem;
+}
+
+H3 {
+    font-size: 1.4rem;
+}
+
+H4 {
+    color: $white;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+H5 {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    letter-spacing: .7px;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 600;
+}

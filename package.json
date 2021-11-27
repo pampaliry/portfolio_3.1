@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_3",
+  "version": "1.0.0",
+  "description": "sas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pampaliry",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pampaliry/portfolio_3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pampaliry/portfolio_3/issues"
+  },
+  "homepage": "https://github.com/pampaliry/portfolio_3#readme"
+}
